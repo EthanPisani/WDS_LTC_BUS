@@ -20,21 +20,26 @@ os.makedirs("analysis_results/epoch200", exist_ok=True)
 # Device configuration
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# Define the LSTM model architecture
+# Define Model with Improvements
 class LSTMModel(nn.Module):
     def __init__(self, input_dim, hidden_dim, output_dim, num_layers):
         super(LSTMModel, self).__init__()
-        self.lstm = nn.LSTM(input_dim, hidden_dim, num_layers, batch_first=True, dropout=0.2).to(device)
-        self.fc = nn.Linear(hidden_dim, output_dim).to(device)
+        self.lstm = nn.LSTM(input_dim, hidden_dim, num_layers, batch_first=True, dropout=0.2, bidirectional=True).to(device)
+        self.fc = nn.Linear(hidden_dim * 2, output_dim).to(device)  # Multiply by 2 for bidirectional
+        self.dropout = nn.Dropout(0.2)
 
     def forward(self, x):
-        _, (hidden, _) = self.lstm(x)
-        return self.fc(hidden[-1])
+        out, (hidden, _) = self.lstm(x)
+        out = self.dropout(out[:, -1, :])  # Take the last hidden state
+        return self.fc(out)
+    
+
 # Load the saved model
-input_dim = 4  # Number of features
+input_dim =6
 hidden_dim = 128
-output_dim = 1  # Predicting delay
+output_dim = 1
 num_layers = 3
+
 model = LSTMModel(input_dim, hidden_dim, output_dim, num_layers).to(device)
 model.load_state_dict(torch.load("model.pth", map_location=device))
 model.eval()
@@ -45,6 +50,11 @@ target_scaler = joblib.load("target_scaler.pkl")
 data = pd.read_csv("bus.csv")
 features = ["stop_id", "day", "day_of_year", "scheduled_time"]
 target = "delay"
+data['datetime'] = pd.to_datetime(data['unixtimestamp_scheduled'], unit='s')
+
+data['hour'] = data['datetime'].dt.hour
+data['minute'] = data['datetime'].dt.minute
+features += ['hour', 'minute']
 data[features] = scaler.transform(data[features])
 data[target] = target_scaler.transform(data[[target]])
 
@@ -145,7 +155,7 @@ absolute_errors /= 60  # Convert seconds to minutes
 bins = [0, 1, 2, 3, 4, 5, 10, np.inf]
 labels = ["0-1 min", "1-2 min", "2-3 min", "3-4 min", "4-5 min", "5-10 min", "10+ min"]
 # colors are green to red, bright green for 0-1 min, bright red for 10+ min
-colors = ["#00FF00", "#99FF00", "#66FF00", "#99FF00", "#FFCC00", "#FF9900", "#FF1100"]
+colors = ["#00FF00", "#99FF00", "#BBFF00", "#FFFF00", "#FFCC00", "#FF9900", "#FF1100"]
 # Categorize errors into bins
 error_categories = pd.cut(absolute_errors.flatten(), bins=bins, labels=labels, right=False)
 
