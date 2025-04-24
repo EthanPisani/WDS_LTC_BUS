@@ -1,0 +1,187 @@
+2025-03-24 19:13:54,056 - __main__ - INFO - Using device: cpu
+2025-03-24 19:13:54,057 - __main__ - ERROR - Error loading model or scalers: cannot import name 'LSTMModel' from 'Model' (/Users/saad1035/WDS_LTC_BUS/Model.py)
+2025-03-24 19:13:54,057 - __main__ - CRITICAL - Failed to load model and scalers. API may not function correctly.
+2025-03-24 19:13:54,057 - __main__ - INFO - Using device: cpu
+2025-03-24 19:13:54,057 - __main__ - ERROR - Error loading model or scalers: cannot import name 'LSTMModel' from 'Model' (/Users/saad1035/WDS_LTC_BUS/Model.py)
+2025-03-24 19:14:12,529 - __main__ - INFO - Using device: cpu
+2025-03-24 19:14:12,530 - __main__ - ERROR - Error loading model or scalers: cannot import name 'LSTMModel' from 'Model' (/Users/saad1035/WDS_LTC_BUS/Model.py)
+2025-03-24 19:14:12,530 - __main__ - CRITICAL - Failed to load model and scalers. API may not function correctly.
+2025-03-24 19:14:12,530 - __main__ - INFO - Using device: cpu
+2025-03-24 19:14:12,530 - __main__ - ERROR - Error loading model or scalers: cannot import name 'LSTMModel' from 'Model' (/Users/saad1035/WDS_LTC_BUS/Model.py)
+2025-03-24 19:14:12,565 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://172.30.88.159:5002
+2025-03-24 19:14:12,565 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 19:18:26,824 - __main__ - INFO - Using device: cpu
+2025-03-24 19:18:26,837 - __main__ - ERROR - Error loading model or scalers: module 'torch.nn' has no attribute 'LayerNormalization'
+2025-03-24 19:18:26,837 - __main__ - CRITICAL - Failed to load model and scalers. API may not function correctly.
+2025-03-24 19:18:26,846 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://172.30.88.159:5002
+2025-03-24 19:18:26,846 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 19:21:22,715 - __main__ - INFO - Added compatibility for nn.LayerNormalization
+2025-03-24 19:21:22,716 - __main__ - INFO - Using device: cpu
+2025-03-24 19:21:22,725 - __main__ - ERROR - Error loading model or scalers: Error(s) in loading state_dict for ImprovedLSTM:
+	Missing key(s) in state_dict: "cnn.weight", "cnn.bias", "layers.0.weight_ih_l0", "layers.0.weight_hh_l0", "layers.0.bias_ih_l0", "layers.0.bias_hh_l0", "layers.0.weight_ih_l0_reverse", "layers.0.weight_hh_l0_reverse", "layers.0.bias_ih_l0_reverse", "layers.0.bias_hh_l0_reverse", "layers.0.weight_ih_l1", "layers.0.weight_hh_l1", "layers.0.bias_ih_l1", "layers.0.bias_hh_l1", "layers.0.weight_ih_l1_reverse", "layers.0.weight_hh_l1_reverse", "layers.0.bias_ih_l1_reverse", "layers.0.bias_hh_l1_reverse", "attention_layer.W", "attention_layer.U", "attention_layer.v", "pristup_layer.weight", "pristup_layer.bias", "decoder_layer.weight_ih_l0", "decoder_layer.weight_hh_l0", "decoder_layer.bias_ih_l0", "decoder_layer.bias_hh_l0", "decoder_layer.weight_ih_l1", "decoder_layer.weight_hh_l1", "decoder_layer.bias_ih_l1", "decoder_layer.bias_hh_l1", "output_layer.weight", "output_layer.bias", "layer_norm.weight", "layer_norm.bias". 
+	Unexpected key(s) in state_dict: "lstm.weight_ih_l0", "lstm.weight_hh_l0", "lstm.bias_ih_l0", "lstm.bias_hh_l0", "lstm.weight_ih_l0_reverse", "lstm.weight_hh_l0_reverse", "lstm.bias_ih_l0_reverse", "lstm.bias_hh_l0_reverse", "lstm.weight_ih_l1", "lstm.weight_hh_l1", "lstm.bias_ih_l1", "lstm.bias_hh_l1", "lstm.weight_ih_l1_reverse", "lstm.weight_hh_l1_reverse", "lstm.bias_ih_l1_reverse", "lstm.bias_hh_l1_reverse", "lstm.weight_ih_l2", "lstm.weight_hh_l2", "lstm.bias_ih_l2", "lstm.bias_hh_l2", "lstm.weight_ih_l2_reverse", "lstm.weight_hh_l2_reverse", "lstm.bias_ih_l2_reverse", "lstm.bias_hh_l2_reverse", "fc.weight", "fc.bias". 
+2025-03-24 19:21:22,725 - __main__ - CRITICAL - Failed to load model and scalers. API may not function correctly.
+2025-03-24 19:21:22,734 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://172.30.88.159:5002
+2025-03-24 19:21:22,734 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 19:22:50,071 - __main__ - INFO - Added compatibility for nn.LayerNormalization
+2025-03-24 19:22:50,072 - __main__ - INFO - Using device: cpu
+2025-03-24 19:22:50,074 - Model - INFO - Using device: cpu
+2025-03-24 19:22:51,957 - Model - INFO - Model and scalers loaded successfully
+2025-03-24 19:22:51,957 - __main__ - ERROR - Error loading model or scalers: cannot import name 'ImprovedLSTM' from 'Model' (/Users/saad1035/WDS_LTC_BUS/Model.py)
+2025-03-24 19:22:51,957 - __main__ - CRITICAL - Failed to load model and scalers. API may not function correctly.
+2025-03-24 19:22:51,979 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://172.30.88.159:5002
+2025-03-24 19:22:51,979 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-24 19:50:22,302 - __main__ - INFO - Added compatibility for nn.LayerNormalization
+2025-03-24 19:50:22,303 - __main__ - INFO - Using device: cpu
+2025-03-24 19:50:22,658 - __main__ - INFO - Model and scalers loaded successfully
+2025-03-24 19:50:22,668 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://172.30.88.159:5002
+2025-03-24 19:50:22,668 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-25 18:22:28,405 - __main__ - INFO - Added compatibility for nn.LayerNormalization
+2025-03-25 18:22:28,406 - __main__ - INFO - Using device: cpu
+2025-03-25 18:22:28,894 - __main__ - INFO - Model and scalers loaded successfully
+2025-03-25 18:22:28,920 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.30.95.188:5001
+2025-03-25 18:22:28,920 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-25 18:22:46,601 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 18:22:46] "GET /health HTTP/1.1" 200 -
+2025-03-25 18:23:14,351 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 18:23:14] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-03-25 18:23:36,987 - __main__ - WARNING - No scheduled time found for route 6 at stop 189
+2025-03-25 18:23:36,993 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 18:23:36] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-03-25 18:24:21,301 - __main__ - WARNING - No scheduled time found for route 6 at stop 189
+2025-03-25 18:24:21,308 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 18:24:21] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-03-25 18:25:09,182 - __main__ - WARNING - No scheduled time found for route 102 at stop 10
+2025-03-25 18:25:09,189 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 18:25:09] "[33mPOST /predict HTTP/1.1[0m" 404 -
+2025-03-25 18:29:42,170 - __main__ - ERROR - Error preprocessing input: could not convert string to float: 'FANCOLL4'
+2025-03-25 18:29:42,176 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 18:29:42] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-03-25 18:30:24,820 - __main__ - ERROR - Error preprocessing input: could not convert string to float: 'FANCOLL4'
+2025-03-25 18:30:24,825 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 18:30:24] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-03-25 18:31:40,252 - __main__ - ERROR - Error preprocessing input: could not convert string to float: 'FANCOLL4'
+2025-03-25 18:31:40,260 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 18:31:40] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-04-08 13:04:07,766 - __main__ - INFO - Added compatibility for nn.LayerNormalization
+2025-04-08 13:04:07,767 - __main__ - INFO - Using device: cpu
+2025-04-08 13:04:09,645 - __main__ - INFO - Loaded stop ID mapping with 1827 entries
+2025-04-08 13:04:09,645 - __main__ - INFO - Model and scalers loaded successfully
+2025-04-08 13:04:09,738 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.30.94.68:5001
+2025-04-08 13:04:09,738 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 13:04:42,642 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 13:04:42] "GET /health HTTP/1.1" 200 -
+2025-04-08 13:04:45,154 - __main__ - INFO - Mapped stop_id 'FANCOLL4' to numeric value 153
+2025-04-08 13:04:45,189 - __main__ - INFO - Prediction made for route 27, stop FANCOLL4: delay=373.65s
+2025-04-08 13:04:45,205 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 13:04:45] "POST /predict HTTP/1.1" 200 -
+2025-04-08 13:05:30,329 - __main__ - WARNING - No scheduled time found for route 27 at stop 153
+2025-04-08 13:05:30,330 - __main__ - INFO - Using mock scheduled time for testing: 1744132830
+2025-04-08 13:05:30,333 - __main__ - INFO - Prediction made for route 27, stop 153: delay=370.54s
+2025-04-08 13:05:30,345 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 13:05:30] "POST /predict HTTP/1.1" 200 -
+2025-04-08 13:07:39,881 - __main__ - WARNING - No scheduled time found for route 27 at stop 153
+2025-04-08 13:07:39,883 - __main__ - INFO - Using mock scheduled time for testing: 1744132959
+2025-04-08 13:07:39,896 - __main__ - INFO - Prediction made for route 27, stop 153: delay=368.01s
+2025-04-08 13:07:39,909 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 13:07:39] "POST /predict HTTP/1.1" 200 -
+2025-04-08 13:09:24,040 - __main__ - WARNING - No scheduled time found for route 27 at stop 153
+2025-04-08 13:09:24,043 - __main__ - INFO - Using mock scheduled time for testing: 1744133064
+2025-04-08 13:09:24,058 - __main__ - INFO - Prediction made for route 27, stop 153: delay=364.22s
+2025-04-08 13:09:24,070 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 13:09:24] "POST /predict HTTP/1.1" 200 -
+2025-04-08 13:09:26,455 - __main__ - WARNING - No scheduled time found for route 27 at stop 153
+2025-04-08 13:09:26,455 - __main__ - INFO - Using mock scheduled time for testing: 1744133066
+2025-04-08 13:09:26,457 - __main__ - INFO - Prediction made for route 27, stop 153: delay=362.89s
+2025-04-08 13:09:26,468 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 13:09:26] "POST /predict HTTP/1.1" 200 -
+2025-04-08 13:11:09,703 - __main__ - ERROR - Error fetching GTFS data: 500 Server Error: Internal Server Error for url: http://gtfs.ltconline.ca/TripUpdate/TripUpdates.json
+2025-04-08 13:11:09,704 - __main__ - WARNING - Could not fetch GTFS data, using mock data for testing
+2025-04-08 13:11:09,705 - __main__ - WARNING - No scheduled time found for route 102 at stop 2
+2025-04-08 13:11:09,705 - __main__ - INFO - Using mock scheduled time for testing: 1744133169
+2025-04-08 13:11:09,714 - __main__ - INFO - Prediction made for route 102, stop 2: delay=345.78s
+2025-04-08 13:11:09,714 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 13:11:09] "POST /predict HTTP/1.1" 200 -
+2025-04-08 13:13:52,575 - __main__ - WARNING - No scheduled time found for route 27 at stop 153
+2025-04-08 13:13:52,578 - __main__ - INFO - Using mock scheduled time for testing: 1744133332
+2025-04-08 13:13:52,587 - __main__ - INFO - Prediction made for route 27, stop 153: delay=361.04s
+2025-04-08 13:13:52,604 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 13:13:52] "POST /predict HTTP/1.1" 200 -
+2025-04-08 13:14:12,428 - __main__ - WARNING - No scheduled time found for route 102 at stop 5
+2025-04-08 13:14:12,429 - __main__ - INFO - Using mock scheduled time for testing: 1744133352
+2025-04-08 13:14:12,432 - __main__ - INFO - Prediction made for route 102, stop 5: delay=346.10s
+2025-04-08 13:14:12,457 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 13:14:12] "POST /predict HTTP/1.1" 200 -
+2025-04-08 13:14:28,635 - __main__ - WARNING - No scheduled time found for route 27 at stop 153
+2025-04-08 13:14:28,636 - __main__ - INFO - Using mock scheduled time for testing: 1744133368
+2025-04-08 13:14:28,638 - __main__ - INFO - Prediction made for route 27, stop 153: delay=361.05s
+2025-04-08 13:14:28,650 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 13:14:28] "POST /predict HTTP/1.1" 200 -
+2025-04-08 13:17:54,178 - __main__ - ERROR - Error fetching GTFS data: HTTPConnectionPool(host='gtfs.ltconline.ca', port=80): Read timed out.
+2025-04-08 13:17:54,184 - __main__ - ERROR - Error fetching GTFS data: HTTPConnectionPool(host='gtfs.ltconline.ca', port=80): Read timed out.
+2025-04-08 13:17:54,186 - __main__ - ERROR - Error fetching GTFS data: HTTPConnectionPool(host='gtfs.ltconline.ca', port=80): Read timed out.
+2025-04-08 13:17:54,186 - __main__ - ERROR - Error fetching GTFS data: HTTPConnectionPool(host='gtfs.ltconline.ca', port=80): Read timed out.
+2025-04-08 13:17:54,186 - __main__ - WARNING - Could not fetch GTFS data, using mock data for testing
+2025-04-08 13:17:54,186 - __main__ - WARNING - Could not fetch GTFS data, using mock data for testing
+2025-04-08 13:17:54,186 - __main__ - WARNING - Could not fetch GTFS data, using mock data for testing
+2025-04-08 13:17:54,186 - __main__ - WARNING - Could not fetch GTFS data, using mock data for testing
+2025-04-08 13:17:54,186 - __main__ - WARNING - No scheduled time found for route 102 at stop 52
+2025-04-08 13:17:54,186 - __main__ - WARNING - No scheduled time found for route 102 at stop 1222
+2025-04-08 13:17:54,186 - __main__ - WARNING - No scheduled time found for route 102 at stop 52
+2025-04-08 13:17:54,186 - __main__ - WARNING - No scheduled time found for route 102 at stop 1222
+2025-04-08 13:17:54,186 - __main__ - INFO - Using mock scheduled time for testing: 1744133574
+2025-04-08 13:17:54,186 - __main__ - INFO - Using mock scheduled time for testing: 1744133574
+2025-04-08 13:17:54,186 - __main__ - INFO - Using mock scheduled time for testing: 1744133574
+2025-04-08 13:17:54,187 - __main__ - INFO - Using mock scheduled time for testing: 1744133574
+2025-04-08 13:17:54,222 - __main__ - INFO - Prediction made for route 102, stop 52: delay=348.84s
+2025-04-08 13:17:54,241 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 13:17:54] "POST /predict HTTP/1.1" 200 -
+2025-04-08 13:17:54,242 - __main__ - INFO - Prediction made for route 102, stop 52: delay=349.28s
+2025-04-08 13:17:54,242 - __main__ - INFO - Prediction made for route 102, stop 1222: delay=359.94s
+2025-04-08 13:17:54,242 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 13:17:54] "POST /predict HTTP/1.1" 200 -
+2025-04-08 13:17:54,243 - __main__ - INFO - Prediction made for route 102, stop 1222: delay=362.00s
+2025-04-08 13:17:54,243 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 13:17:54] "POST /predict HTTP/1.1" 200 -
+2025-04-08 13:17:54,244 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 13:17:54] "POST /predict HTTP/1.1" 200 -
+2025-04-08 13:18:43,959 - __main__ - WARNING - No scheduled time found for route 102 at stop 67
+2025-04-08 13:18:43,961 - __main__ - INFO - Using mock scheduled time for testing: 1744133623
+2025-04-08 13:18:43,964 - __main__ - INFO - Prediction made for route 102, stop 67: delay=349.81s
+2025-04-08 13:18:43,977 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 13:18:43] "POST /predict HTTP/1.1" 200 -
+2025-04-08 13:23:53,813 - __main__ - WARNING - No scheduled time found for route 25 at stop 153
+2025-04-08 13:23:53,815 - __main__ - INFO - Using mock scheduled time for testing: 1744133933
+2025-04-08 13:23:53,820 - __main__ - INFO - Prediction made for route 25, stop 153: delay=354.29s
+2025-04-08 13:23:53,832 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 13:23:53] "POST /predict HTTP/1.1" 200 -
+2025-04-08 13:28:15,561 - __main__ - WARNING - No scheduled time found for route 27 at stop 153
+2025-04-08 13:28:15,562 - __main__ - INFO - Using mock scheduled time for testing: 1744134195
+2025-04-08 13:28:15,569 - __main__ - INFO - Prediction made for route 27, stop 153: delay=351.48s
+2025-04-08 13:28:15,580 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 13:28:15] "POST /predict HTTP/1.1" 200 -
+2025-04-08 13:33:36,911 - __main__ - INFO - Added compatibility for nn.LayerNormalization
+2025-04-08 13:33:36,912 - __main__ - INFO - Using device: cpu
+2025-04-08 13:33:37,366 - __main__ - INFO - Loaded stop ID mapping with 1827 entries
+2025-04-08 13:33:37,366 - __main__ - INFO - Model and scalers loaded successfully
+2025-04-08 13:33:37,478 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.30.94.68:5001
+2025-04-08 13:33:37,478 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 13:34:34,707 - __main__ - INFO - Searching for route_id=27, stop_id=153
+2025-04-08 13:34:34,708 - __main__ - INFO - Found 978 entities in GTFS data
+2025-04-08 13:34:34,708 - __main__ - INFO - Found string representation of stop_id 153: FANCOLL4
+2025-04-08 13:34:34,708 - __main__ - INFO - Found matching route: 27 in entity 0
+2025-04-08 13:34:34,708 - __main__ - INFO - This route has 34 stop updates
+2025-04-08 13:34:34,708 - __main__ - INFO - Found matching stop: FANCOLL4
+2025-04-08 13:34:34,708 - __main__ - INFO - Found arrival time: 1744135862
+2025-04-08 13:34:34,713 - __main__ - INFO - Prediction made for route 27, stop 153: delay=346.30s
+2025-04-08 13:34:34,725 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 13:34:34] "POST /predict HTTP/1.1" 200 -
+2025-04-08 13:37:06,209 - __main__ - INFO - Searching for route_id=04, stop_id=187
+2025-04-08 13:37:06,210 - __main__ - INFO - Found 972 entities in GTFS data
+2025-04-08 13:37:06,210 - __main__ - INFO - Found string representation of stop_id 187: OXFOQUE1
+2025-04-08 13:37:06,210 - __main__ - INFO - Found matching route: 04 in entity 2
+2025-04-08 13:37:06,210 - __main__ - INFO - This route has 32 stop updates
+2025-04-08 13:37:06,210 - __main__ - INFO - Found matching route: 04 in entity 3
+2025-04-08 13:37:06,210 - __main__ - INFO - This route has 59 stop updates
+2025-04-08 13:37:06,210 - __main__ - INFO - Found matching stop: OXFOQUE1
+2025-04-08 13:37:06,210 - __main__ - INFO - Found arrival time: 1744137650
+2025-04-08 13:37:06,230 - __main__ - INFO - Prediction made for route 04, stop 187: delay=343.97s
+2025-04-08 13:37:06,246 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 13:37:06] "POST /predict HTTP/1.1" 200 -
