@@ -185,3 +185,220 @@
 2025-04-08 13:37:06,210 - __main__ - INFO - Found arrival time: 1744137650
 2025-04-08 13:37:06,230 - __main__ - INFO - Prediction made for route 04, stop 187: delay=343.97s
 2025-04-08 13:37:06,246 - werkzeug - INFO - 127.0.0.1 - - [08/Apr/2025 13:37:06] "POST /predict HTTP/1.1" 200 -
+2025-04-24 18:25:10,509 - __main__ - INFO - Added compatibility for nn.LayerNormalization
+2025-04-24 18:25:10,514 - __main__ - INFO - Using device: cpu
+2025-04-24 18:25:11,567 - __main__ - INFO - Loaded stop ID mapping with 1827 entries
+2025-04-24 18:25:11,567 - __main__ - INFO - Model and scalers loaded successfully
+2025-04-24 18:25:11,570 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.0.9.12:5001
+2025-04-24 18:25:11,570 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-24 18:27:18,937 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 18:27:18] "GET /health HTTP/1.1" 200 -
+2025-04-24 18:27:26,496 - __main__ - INFO - Searching for route_id=1, stop_id=1234
+2025-04-24 18:27:26,496 - __main__ - INFO - Found 612 entities in GTFS data
+2025-04-24 18:27:26,497 - __main__ - INFO - Found string representation of stop_id 1234: THOMADE2
+2025-04-24 18:27:26,497 - __main__ - WARNING - No scheduled time found for route 1 at stop 1234
+2025-04-24 18:27:26,497 - __main__ - WARNING - Available routes: {'13', '30', '33', '92', '31', '02', '10', '03', '104', '102', '01', '91', '07', '90', '15', '28', '25', '17', '06', '05', '24', '09', '20', '19', '94', '106', '35', '27', '93', '16', '36', '04', '34', '38', '12'}
+2025-04-24 18:27:26,497 - __main__ - WARNING - Stops for route 1: set()
+2025-04-24 18:27:26,497 - __main__ - INFO - Using mock scheduled time for testing: 1745534546
+2025-04-24 18:27:26,712 - __main__ - ERROR - Error processing prediction request: 'numpy.float32' object cannot be interpreted as an integer
+2025-04-24 18:27:26,730 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 18:27:26] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-04-24 18:27:48,632 - __main__ - INFO - Searching for route_id=01, stop_id=34
+2025-04-24 18:27:48,634 - __main__ - INFO - Found 609 entities in GTFS data
+2025-04-24 18:27:48,634 - __main__ - INFO - Found string representation of stop_id 34: DUNDWAT2
+2025-04-24 18:27:48,634 - __main__ - INFO - Found matching route: 01 in entity 40
+2025-04-24 18:27:48,634 - __main__ - INFO - This route has 7 stop updates
+2025-04-24 18:27:48,634 - __main__ - INFO - Found matching route: 01 in entity 41
+2025-04-24 18:27:48,634 - __main__ - INFO - This route has 55 stop updates
+2025-04-24 18:27:48,634 - __main__ - INFO - Found matching route: 01 in entity 42
+2025-04-24 18:27:48,634 - __main__ - INFO - This route has 28 stop updates
+2025-04-24 18:27:48,634 - __main__ - INFO - Found matching route: 01 in entity 43
+2025-04-24 18:27:48,634 - __main__ - INFO - This route has 50 stop updates
+2025-04-24 18:27:48,634 - __main__ - INFO - Found matching route: 01 in entity 44
+2025-04-24 18:27:48,634 - __main__ - INFO - This route has 57 stop updates
+2025-04-24 18:27:48,634 - __main__ - INFO - Found matching route: 01 in entity 45
+2025-04-24 18:27:48,634 - __main__ - INFO - This route has 49 stop updates
+2025-04-24 18:27:48,634 - __main__ - INFO - Found matching route: 01 in entity 142
+2025-04-24 18:27:48,634 - __main__ - INFO - This route has 38 stop updates
+2025-04-24 18:27:48,634 - __main__ - INFO - Found matching route: 01 in entity 143
+2025-04-24 18:27:48,634 - __main__ - INFO - This route has 58 stop updates
+2025-04-24 18:27:48,634 - __main__ - INFO - Found matching route: 01 in entity 245
+2025-04-24 18:27:48,634 - __main__ - INFO - This route has 50 stop updates
+2025-04-24 18:27:48,634 - __main__ - INFO - Found matching route: 01 in entity 246
+2025-04-24 18:27:48,634 - __main__ - INFO - This route has 50 stop updates
+2025-04-24 18:27:48,634 - __main__ - INFO - Found matching route: 01 in entity 247
+2025-04-24 18:27:48,634 - __main__ - INFO - This route has 50 stop updates
+2025-04-24 18:27:48,634 - __main__ - INFO - Found matching route: 01 in entity 248
+2025-04-24 18:27:48,634 - __main__ - INFO - This route has 49 stop updates
+2025-04-24 18:27:48,634 - __main__ - INFO - Found matching route: 01 in entity 249
+2025-04-24 18:27:48,634 - __main__ - INFO - This route has 50 stop updates
+2025-04-24 18:27:48,634 - __main__ - INFO - Found matching route: 01 in entity 250
+2025-04-24 18:27:48,634 - __main__ - INFO - This route has 49 stop updates
+2025-04-24 18:27:48,635 - __main__ - INFO - Found matching route: 01 in entity 251
+2025-04-24 18:27:48,635 - __main__ - INFO - This route has 49 stop updates
+2025-04-24 18:27:48,635 - __main__ - INFO - Found matching route: 01 in entity 252
+2025-04-24 18:27:48,635 - __main__ - INFO - This route has 50 stop updates
+2025-04-24 18:27:48,635 - __main__ - INFO - Found matching route: 01 in entity 253
+2025-04-24 18:27:48,635 - __main__ - INFO - This route has 49 stop updates
+2025-04-24 18:27:48,635 - __main__ - INFO - Found matching route: 01 in entity 254
+2025-04-24 18:27:48,635 - __main__ - INFO - This route has 49 stop updates
+2025-04-24 18:27:48,635 - __main__ - INFO - Found matching route: 01 in entity 255
+2025-04-24 18:27:48,635 - __main__ - INFO - This route has 50 stop updates
+2025-04-24 18:27:48,635 - __main__ - INFO - Found matching route: 01 in entity 256
+2025-04-24 18:27:48,635 - __main__ - INFO - This route has 49 stop updates
+2025-04-24 18:27:48,635 - __main__ - WARNING - No scheduled time found for route 01 at stop 34
+2025-04-24 18:27:48,635 - __main__ - WARNING - Available routes: {'13', '30', '33', '92', '31', '02', '10', '03', '104', '102', '01', '91', '07', '90', '15', '28', '25', '17', '06', '05', '24', '09', '20', '19', '94', '106', '35', '27', '93', '16', '36', '04', '34', '38', '12'}
+2025-04-24 18:27:48,635 - __main__ - WARNING - Stops for route 01: {'BASEFAI2', 'BURLCAIR', 'CHEAWIL1', 'WELLHOR1', 'BRIAMEL2', 'SOUTHOSP', 'THOMJACQ', 'COLBGRO1', 'WELLGRA2', 'WELLWELL', 'KIPPBRIA', 'ADELHUR5', 'WESTTHO1', 'DUFFWATS', 'THOMCHE2', 'HUROWEDG', 'PONDCLE2', 'ADELHUR2', 'WESTBAS2', 'THOMEME1', 'HUROADE6', 'BRIAMEL3', 'ADELVIC1', 'WELLPERC', 'BRIAHURO', 'CHEACOLB', 'THOMKED1', 'KINGSCE2', 'COMMDEV4', 'KIPPARBO', 'COMMPOM4', 'GREYWATE', 'CHEAMAI1', 'WELLCHES', 'KIPPADEL', 'WELLCOLG', 'DUFFWEL2', 'COLBOXFO', 'COMMKIE2', 'WELLMCL1', 'KINGVERM', 'CHEAADE2', 'BURLPOMI', 'WESTWHE1', 'COLBGRO2', 'WESTTHO2', 'PONDSCE4', 'KIPPBELF', 'WELLGRE1', 'SHELDEVE', 'BASEWEL1', 'THOMADE1', 'THOMGLA1', 'THOMCHE1', 'PONDSCE1', 'WELLBAS3', 'BASEFAI3', 'WELLDUFF', 'WELLSOU2', 'SOUTWATE', 'COLBOXFD', 'WELLDUN3', 'WESTWHE2', 'KINGCHI1', 'COLBCEN1', 'WELLGRE2', 'COLBPAM2', 'WELLDUN2', 'WELLBOND', 'PONDCLE1', 'PONDSCE2', 'PONDBURL', 'HORTWELL', 'THOMADE2', 'ADELCHE1', 'PONDCOMM', 'KINGECHO', 'ADELREG1', 'KINGTHO2', 'ADELHUR1', 'KINGCHI2', 'COLBSJM1', 'SHELBUR2', 'KIPPBARK', 'PONDEGER', 'THOMGLA2', 'GREYCOLB', 'KINGDIP1', 'THOMKED2', 'PONDAILS', 'COLBDUFF', 'KINGEAGL', 'HORTCOL2', 'COLBPAM1', 'ADELVIC2', 'COLBCHEA', 'KINGBUR1', 'WELLTHJA', 'KINGSCE1', 'CHEAMAI2', 'SHELODEL', 'WELLGRA1', 'WELLALEX', 'COLBPRIN', 'PONDAIL2', 'CHEAWIL2', 'WESTBAS1', 'COLBCEN2', 'DUFFCOLB', 'KINGDIP2', 'HUROBARK', 'COLBSJM2', 'DUFFPICT', 'HUROBRI2', 'SOUTWEL3'}
+2025-04-24 18:27:48,635 - __main__ - INFO - Using mock scheduled time for testing: 1745534568
+2025-04-24 18:27:48,643 - __main__ - ERROR - Error processing prediction request: 'numpy.float32' object cannot be interpreted as an integer
+2025-04-24 18:27:48,658 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 18:27:48] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-04-24 18:28:04,131 - __main__ - INFO - Searching for route_id=01, stop_id=SOUTWEL3
+2025-04-24 18:28:04,131 - __main__ - INFO - Found 609 entities in GTFS data
+2025-04-24 18:28:04,131 - __main__ - INFO - Found numeric representation of stop_id SOUTWEL3: 1243
+2025-04-24 18:28:04,132 - __main__ - INFO - Found matching route: 01 in entity 40
+2025-04-24 18:28:04,132 - __main__ - INFO - This route has 6 stop updates
+2025-04-24 18:28:04,132 - __main__ - INFO - Found matching route: 01 in entity 41
+2025-04-24 18:28:04,132 - __main__ - INFO - This route has 55 stop updates
+2025-04-24 18:28:04,132 - __main__ - INFO - Found matching route: 01 in entity 42
+2025-04-24 18:28:04,132 - __main__ - INFO - This route has 28 stop updates
+2025-04-24 18:28:04,132 - __main__ - INFO - Found matching route: 01 in entity 43
+2025-04-24 18:28:04,132 - __main__ - INFO - This route has 50 stop updates
+2025-04-24 18:28:04,132 - __main__ - INFO - Found matching stop: SOUTWEL3
+2025-04-24 18:28:04,132 - __main__ - INFO - Found arrival time: 1745535680
+2025-04-24 18:28:04,132 - __main__ - INFO - Mapped stop_id 'SOUTWEL3' to numeric value 1243
+2025-04-24 18:28:04,135 - __main__ - ERROR - Error processing prediction request: 'numpy.float32' object cannot be interpreted as an integer
+2025-04-24 18:28:04,145 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 18:28:04] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-04-24 18:30:45,952 - __main__ - ERROR - Error processing prediction request: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-04-24 18:30:45,955 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 18:30:45] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-04-24 18:31:02,283 - __main__ - INFO - Searching for route_id=01, stop_id=SOUTWEL3
+2025-04-24 18:31:02,284 - __main__ - INFO - Found 599 entities in GTFS data
+2025-04-24 18:31:02,284 - __main__ - INFO - Found numeric representation of stop_id SOUTWEL3: 1243
+2025-04-24 18:31:02,284 - __main__ - INFO - Found matching route: 01 in entity 40
+2025-04-24 18:31:02,284 - __main__ - INFO - This route has 3 stop updates
+2025-04-24 18:31:02,284 - __main__ - INFO - Found matching route: 01 in entity 41
+2025-04-24 18:31:02,284 - __main__ - INFO - This route has 55 stop updates
+2025-04-24 18:31:02,284 - __main__ - INFO - Found matching route: 01 in entity 42
+2025-04-24 18:31:02,284 - __main__ - INFO - This route has 28 stop updates
+2025-04-24 18:31:02,284 - __main__ - INFO - Found matching route: 01 in entity 43
+2025-04-24 18:31:02,284 - __main__ - INFO - This route has 50 stop updates
+2025-04-24 18:31:02,284 - __main__ - INFO - Found matching stop: SOUTWEL3
+2025-04-24 18:31:02,284 - __main__ - INFO - Found arrival time: 1745535680
+2025-04-24 18:31:02,284 - __main__ - INFO - Mapped stop_id 'SOUTWEL3' to numeric value 1243
+2025-04-24 18:31:02,515 - __main__ - ERROR - Error processing prediction request: 'numpy.float32' object cannot be interpreted as an integer
+2025-04-24 18:31:02,533 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 18:31:02] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-04-24 18:32:36,928 - __main__ - INFO - Added compatibility for nn.LayerNormalization
+2025-04-24 18:32:36,932 - __main__ - INFO - Using device: cpu
+2025-04-24 18:32:37,775 - __main__ - INFO - Loaded stop ID mapping with 1827 entries
+2025-04-24 18:32:37,776 - __main__ - INFO - Model and scalers loaded successfully
+2025-04-24 18:32:37,778 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.0.9.12:5001
+2025-04-24 18:32:37,778 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-24 18:33:22,265 - __main__ - INFO - Searching for route_id=01, stop_id=SOUTWEL3
+2025-04-24 18:33:22,265 - __main__ - INFO - Found 595 entities in GTFS data
+2025-04-24 18:33:22,265 - __main__ - INFO - Found numeric representation of stop_id SOUTWEL3: 1243
+2025-04-24 18:33:22,265 - __main__ - INFO - Found matching route: 01 in entity 40
+2025-04-24 18:33:22,265 - __main__ - INFO - This route has 2 stop updates
+2025-04-24 18:33:22,265 - __main__ - INFO - Found matching route: 01 in entity 41
+2025-04-24 18:33:22,265 - __main__ - INFO - This route has 55 stop updates
+2025-04-24 18:33:22,265 - __main__ - INFO - Found matching route: 01 in entity 42
+2025-04-24 18:33:22,265 - __main__ - INFO - This route has 15 stop updates
+2025-04-24 18:33:22,265 - __main__ - INFO - Found matching route: 01 in entity 43
+2025-04-24 18:33:22,265 - __main__ - INFO - This route has 50 stop updates
+2025-04-24 18:33:22,265 - __main__ - INFO - Found matching stop: SOUTWEL3
+2025-04-24 18:33:22,265 - __main__ - INFO - Found arrival time: 1745535678
+2025-04-24 18:33:22,265 - __main__ - INFO - Mapped stop_id 'SOUTWEL3' to numeric value 1243
+2025-04-24 18:33:22,475 - __main__ - INFO - Prediction made for route 01, stop SOUTWEL3: delay=341.00s
+2025-04-24 18:33:22,494 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 18:33:22] "POST /predict HTTP/1.1" 200 -
+2025-04-24 18:33:40,875 - __main__ - INFO - Searching for route_id=01, stop_id=SOUTWEL3
+2025-04-24 18:33:40,876 - __main__ - INFO - Found 598 entities in GTFS data
+2025-04-24 18:33:40,876 - __main__ - INFO - Found numeric representation of stop_id SOUTWEL3: 1243
+2025-04-24 18:33:40,876 - __main__ - INFO - Found matching route: 01 in entity 40
+2025-04-24 18:33:40,876 - __main__ - INFO - This route has 55 stop updates
+2025-04-24 18:33:40,876 - __main__ - INFO - Found matching route: 01 in entity 41
+2025-04-24 18:33:40,876 - __main__ - INFO - This route has 50 stop updates
+2025-04-24 18:33:40,876 - __main__ - INFO - Found matching stop: SOUTWEL3
+2025-04-24 18:33:40,876 - __main__ - INFO - Found arrival time: 1745538756
+2025-04-24 18:33:40,876 - __main__ - INFO - Mapped stop_id 'SOUTWEL3' to numeric value 1243
+2025-04-24 18:33:40,885 - __main__ - INFO - Prediction made for route 01, stop SOUTWEL3: delay=341.00s
+2025-04-24 18:33:40,901 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 18:33:40] "POST /predict HTTP/1.1" 200 -
+2025-04-24 18:34:27,543 - __main__ - INFO - Searching for route_id=09, stop_id=WESTSAR2
+2025-04-24 18:34:27,544 - __main__ - INFO - Found 598 entities in GTFS data
+2025-04-24 18:34:27,544 - __main__ - INFO - Found numeric representation of stop_id WESTSAR2: 55
+2025-04-24 18:34:27,544 - __main__ - INFO - Found matching route: 09 in entity 130
+2025-04-24 18:34:27,544 - __main__ - INFO - This route has 2 stop updates
+2025-04-24 18:34:27,544 - __main__ - INFO - Found matching route: 09 in entity 131
+2025-04-24 18:34:27,544 - __main__ - INFO - This route has 36 stop updates
+2025-04-24 18:34:27,544 - __main__ - INFO - Found matching route: 09 in entity 151
+2025-04-24 18:34:27,544 - __main__ - INFO - This route has 33 stop updates
+2025-04-24 18:34:27,544 - __main__ - INFO - Found matching stop: WESTSAR2
+2025-04-24 18:34:27,544 - __main__ - INFO - Found arrival time: 1745534642
+2025-04-24 18:34:27,544 - __main__ - INFO - Mapped stop_id 'WESTSAR2' to numeric value 55
+2025-04-24 18:34:27,723 - __main__ - INFO - Prediction made for route 09, stop WESTSAR2: delay=397.00s
+2025-04-24 18:34:27,742 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 18:34:27] "POST /predict HTTP/1.1" 200 -
+2025-04-24 18:34:31,008 - __main__ - INFO - Searching for route_id=09, stop_id=WESTSAR2
+2025-04-24 18:34:31,008 - __main__ - INFO - Found 597 entities in GTFS data
+2025-04-24 18:34:31,008 - __main__ - INFO - Found numeric representation of stop_id WESTSAR2: 55
+2025-04-24 18:34:31,008 - __main__ - INFO - Found matching route: 09 in entity 130
+2025-04-24 18:34:31,008 - __main__ - INFO - This route has 2 stop updates
+2025-04-24 18:34:31,008 - __main__ - INFO - Found matching route: 09 in entity 131
+2025-04-24 18:34:31,008 - __main__ - INFO - This route has 36 stop updates
+2025-04-24 18:34:31,008 - __main__ - INFO - Found matching route: 09 in entity 151
+2025-04-24 18:34:31,008 - __main__ - INFO - This route has 33 stop updates
+2025-04-24 18:34:31,008 - __main__ - INFO - Found matching stop: WESTSAR2
+2025-04-24 18:34:31,008 - __main__ - INFO - Found arrival time: 1745534642
+2025-04-24 18:34:31,008 - __main__ - INFO - Mapped stop_id 'WESTSAR2' to numeric value 55
+2025-04-24 18:34:31,011 - __main__ - INFO - Prediction made for route 09, stop WESTSAR2: delay=397.00s
+2025-04-24 18:34:31,023 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 18:34:31] "POST /predict HTTP/1.1" 200 -
+2025-04-24 18:34:40,414 - __main__ - INFO - Searching for route_id=09, stop_id=WESTSAR2
+2025-04-24 18:34:40,416 - __main__ - INFO - Found 597 entities in GTFS data
+2025-04-24 18:34:40,416 - __main__ - INFO - Found numeric representation of stop_id WESTSAR2: 55
+2025-04-24 18:34:40,416 - __main__ - INFO - Found matching route: 09 in entity 130
+2025-04-24 18:34:40,416 - __main__ - INFO - This route has 2 stop updates
+2025-04-24 18:34:40,416 - __main__ - INFO - Found matching route: 09 in entity 131
+2025-04-24 18:34:40,416 - __main__ - INFO - This route has 36 stop updates
+2025-04-24 18:34:40,416 - __main__ - INFO - Found matching route: 09 in entity 151
+2025-04-24 18:34:40,416 - __main__ - INFO - This route has 33 stop updates
+2025-04-24 18:34:40,416 - __main__ - INFO - Found matching stop: WESTSAR2
+2025-04-24 18:34:40,416 - __main__ - INFO - Found arrival time: 1745534642
+2025-04-24 18:34:40,416 - __main__ - INFO - Mapped stop_id 'WESTSAR2' to numeric value 55
+2025-04-24 18:34:40,419 - __main__ - INFO - Prediction made for route 09, stop WESTSAR2: delay=397.00s
+2025-04-24 18:34:40,436 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 18:34:40] "POST /predict HTTP/1.1" 200 -
+2025-04-24 18:35:18,391 - __main__ - INFO - Searching for route_id=09, stop_id=WESTSAR2
+2025-04-24 18:35:18,393 - __main__ - INFO - Found 596 entities in GTFS data
+2025-04-24 18:35:18,393 - __main__ - INFO - Found numeric representation of stop_id WESTSAR2: 55
+2025-04-24 18:35:18,393 - __main__ - INFO - Found matching route: 09 in entity 130
+2025-04-24 18:35:18,393 - __main__ - INFO - This route has 36 stop updates
+2025-04-24 18:35:18,393 - __main__ - INFO - Found matching route: 09 in entity 150
+2025-04-24 18:35:18,393 - __main__ - INFO - This route has 33 stop updates
+2025-04-24 18:35:18,393 - __main__ - INFO - Found matching stop: WESTSAR2
+2025-04-24 18:35:18,393 - __main__ - INFO - Found arrival time: 1745534597
+2025-04-24 18:35:18,393 - __main__ - INFO - Mapped stop_id 'WESTSAR2' to numeric value 55
+2025-04-24 18:35:18,558 - __main__ - INFO - Prediction made for route 09, stop WESTSAR2: delay=373.00s
+2025-04-24 18:35:18,576 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 18:35:18] "POST /predict HTTP/1.1" 200 -
+2025-04-24 18:35:24,565 - __main__ - INFO - Searching for route_id=09, stop_id=WESTSAR2
+2025-04-24 18:35:24,565 - __main__ - INFO - Found 596 entities in GTFS data
+2025-04-24 18:35:24,565 - __main__ - INFO - Found numeric representation of stop_id WESTSAR2: 55
+2025-04-24 18:35:24,565 - __main__ - INFO - Found matching route: 09 in entity 130
+2025-04-24 18:35:24,566 - __main__ - INFO - This route has 36 stop updates
+2025-04-24 18:35:24,566 - __main__ - INFO - Found matching route: 09 in entity 150
+2025-04-24 18:35:24,566 - __main__ - INFO - This route has 33 stop updates
+2025-04-24 18:35:24,566 - __main__ - INFO - Found matching stop: WESTSAR2
+2025-04-24 18:35:24,566 - __main__ - INFO - Found arrival time: 1745534597
+2025-04-24 18:35:24,566 - __main__ - INFO - Mapped stop_id 'WESTSAR2' to numeric value 55
+2025-04-24 18:35:24,569 - __main__ - INFO - Prediction made for route 09, stop WESTSAR2: delay=373.00s
+2025-04-24 18:35:24,608 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 18:35:24] "POST /predict HTTP/1.1" 200 -
+2025-04-24 18:35:33,185 - __main__ - INFO - Searching for route_id=09, stop_id=WESTSAR4
+2025-04-24 18:35:33,187 - __main__ - INFO - Found 596 entities in GTFS data
+2025-04-24 18:35:33,187 - __main__ - INFO - Found numeric representation of stop_id WESTSAR4: 56
+2025-04-24 18:35:33,188 - __main__ - INFO - Found matching route: 09 in entity 130
+2025-04-24 18:35:33,188 - __main__ - INFO - This route has 36 stop updates
+2025-04-24 18:35:33,188 - __main__ - INFO - Found matching route: 09 in entity 131
+2025-04-24 18:35:33,188 - __main__ - INFO - This route has 34 stop updates
+2025-04-24 18:35:33,188 - __main__ - INFO - Found matching stop: WESTSAR4
+2025-04-24 18:35:33,188 - __main__ - INFO - Found arrival time: 1745537350
+2025-04-24 18:35:33,188 - __main__ - INFO - Mapped stop_id 'WESTSAR4' to numeric value 56
+2025-04-24 18:35:33,191 - __main__ - INFO - Prediction made for route 09, stop WESTSAR4: delay=373.00s
+2025-04-24 18:35:33,202 - werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 18:35:33] "POST /predict HTTP/1.1" 200 -

@@ -284,7 +284,9 @@ def make_prediction(model_input):
             # Inverse transform to get the actual delay prediction
             predicted_delay = target_scaler.inverse_transform(output_np.reshape(-1, 1))
             
-            return predicted_delay[0][0]  # Return the scalar value
+            scalar_delay = predicted_delay[0][0]
+            # covnert to python number frmo numpy
+            return int(scalar_delay)              
     except Exception as e:
         logger.error(f"Error making prediction: {str(e)}")
         return None
@@ -353,7 +355,7 @@ def predict():
         
         # Log successful prediction
         logger.info(f"Prediction made for route {route_id}, stop {stop_id}: delay={predicted_delay:.2f}s")
-        
+        # convert
         return jsonify(response)
     
     except Exception as e:
@@ -371,5 +373,5 @@ initialize()
 
 if __name__ == '__main__':
     # Run the Flask app
-    port = int(os.environ.get("PORT", 5001))
+    port = int(os.environ.get("PORT", 5240))
     app.run(host='0.0.0.0', port=port, debug=False)
