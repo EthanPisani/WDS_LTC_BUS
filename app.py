@@ -296,6 +296,12 @@ def health_check():
     """Health check endpoint"""
     return jsonify({"status": "healthy", "timestamp": time.time()})
 
+@app.route('/models', methods=['GET'])
+def list_models():
+    """List available models"""
+    # For now, we only have one model
+    return jsonify({"models": ["model1"]})
+
 @app.route('/predict', methods=['POST'])
 def predict():
     """Prediction endpoint"""
@@ -310,10 +316,12 @@ def predict():
         current_time = data.get('current_time')
         route_id = data.get('route_id')
         stop_id = data.get('stop_id')
+        # model selection
+        model_selected = data.get('model', 'default') # currently not used
         
         # Validate input
-        if not all([current_time, route_id, stop_id]):
-            return jsonify({"error": "Missing required fields: current_time, route_id, stop_id"}), 400
+        if not all([current_time, route_id, stop_id, model_selected]):
+            return jsonify({"error": "Missing required fields: current_time, route_id, stop_id, model"}), 400
         
         # Fetch GTFS data
         gtfs_data = fetch_gtfs_data()
