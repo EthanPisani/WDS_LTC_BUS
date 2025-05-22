@@ -1,6 +1,6 @@
 filelock==3.13.1
-flask
-flask-cors
+flask==2.3.3
+flask-cors==4.0.0
 fonttools==4.57.0
 fsspec==2024.6.1
 joblib==1.4.2
@@ -18,14 +18,16 @@ pytz==2025.2
 requests==2.32.3
 scikit-learn==1.6.1
 scipy==1.15.2
+seaborn==0.13.2
+shap==0.44.1
 six==1.17.0
+streamlit==1.35.0
 sympy==1.13.3
 tensorboard==2.19.0
 tensorboard-data-server==0.7.2
 threadpoolctl==3.6.0
-
+torch==2.2.2
 tqdm==4.67.1
 typing_extensions==4.12.2
 tzdata==2025.2
 urllib3==2.4.0
-Werkzeug==3.1.3
