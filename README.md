@@ -1,91 +1,105 @@
+
 # London Bus Time Prediction
 
 A machine learning-based system for predicting bus arrival times in London, UK. This project uses a Bidirectional LSTM neural network to provide accurate predictions for various bus routes.
 
-## 🚀 Quick Start
+## 🚀 Quick Start (Frontend Only)
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/EthanPisani/WDS_LTC_BUS.git
-cd WDS_LTC_BUS
-```
+cd WDS_LTC_BUS/frontend
+````
 
 2. Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Launch the application:
+3. Launch the frontend:
+
 ```bash
-python frontend.py
+streamlit run frontend.py
 ```
 
-The application will open automatically in your default web browser. If it doesn't, access it at `http://localhost:8501`.
+Access the app at `http://localhost:8501` in your browser.
+
+---
+
+## 🐳 Docker (Full Stack)
+
+To run both backend and frontend services:
+
+1. From the root of the repository:
+
+```bash
+docker-compose up --build
+```
+
+2. Services:
+
+* **Backend** at `http://localhost:5240`
+* **Frontend** at `http://localhost:5241`
+
+---
 
 ## 📚 Project Overview
 
 This project consists of two main components:
 
 1. **Backend API**
-   - Built with Flask
-   - Handles model predictions
-   - Provides route and stop information
-   - Serves at `https://ltc-bus-api.ethanpisani.com`
+
+   * Built with Flask
+   * Handles model predictions
+   * Provides route and stop information
+   * Runs on `http://localhost:5240`
 
 2. **Frontend Application**
-   - Built with Streamlit
-   - User-friendly interface for bus time predictions
-   - Real-time updates and predictions
-   - Model performance visualization
+
+   * Built with Streamlit
+   * Interactive UI for bus time predictions
+   * Runs on `http://localhost:5241`
+
+---
 
 ## 🛠️ Project Structure
 
 ```
 WDS_LTC_BUS/
-├── frontend.py            # Main Streamlit application
-├── Model.py               # Neural network implementation
-├── train_gpu.py          # Training script
-├── eval2.py              # Evaluation script
-├── requirements.txt      # Project dependencies
-├── model.pth             # Trained model weights
-├── stop_id_mapping.json  # Bus stop ID mappings
-├── bus.csv               # Dataset
-└── analysis_results/     # Model analysis and visualizations
+├── backend/               # Flask app and model files
+│   ├── app.py
+│   ├── Model.py
+│   ├── best_model.pth
+│   ├── requirements.txt
+│   └── ...
+├── frontend/              # Streamlit app
+│   ├── frontend.py
+│   ├── requirements.txt
+│   └── ...
+├── docker-compose.yml     # Multi-container setup
+└── README.md
 ```
+
+---
 
 ## 📊 Features
 
-- Real-time bus arrival predictions using a Bidirectional LSTM neural network
-- Interactive route and stop selection interface
-- Model performance visualization
-- Save favorite routes for quick access
-- Mobile-responsive design
-- Detailed model architecture explanation
+* Real-time bus arrival predictions
+* Interactive route/stop selector
+* Model performance visualizations
+* Mobile-responsive Streamlit frontend
+
+---
 
 ## 🛠️ Technologies Used
 
-- **Machine Learning**
-  - PyTorch
-  - Scikit-learn
-  - Pandas
-  - NumPy
+* **Machine Learning**: PyTorch, Scikit-learn, Pandas, NumPy
+* **Web Frameworks**: Flask (API), Streamlit (Frontend)
+* **Visualization**: Matplotlib, Plotly
 
-- **Web Frameworks**
-  - Streamlit (Frontend)
-  - Flask (Backend API)
-
-- **Data Visualization**
-  - Matplotlib
-  - Seaborn
-  - Plotly
-
-## 📈 Model Architecture
-
-The prediction model is a Bidirectional LSTM neural network that:
-- Processes sequential data for accurate time predictions
-- Handles both past and future context
-- Uses feature scaling for optimal performance
-- Includes dropout layers for regularization
+---
 
 ## 🤝 Contributing
 
@@ -95,17 +109,21 @@ The prediction model is a Bidirectional LSTM neural network that:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+---
+
 ## 📝 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 👥 Authors
 
-- Ethan Pisani
-- Henrique Leite
-- Hadi Youssef
-- Marc Alex Crasto
-- Mohannad Salem
-- Mollo Hou
-- Riley Wong
-- Saad Naeem
+* Ethan Pisani
+* Henrique Leite
+* Hadi Youssef
+* Marc Alex Crasto
+* Mohannad Salem
+* Mollo Hou
+* Riley Wong
+* Saad Naeem
+
+```

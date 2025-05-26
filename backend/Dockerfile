@@ -9,7 +9,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cpu
 RUN pip install --no-cache-dir -r requirements.txt
 # Copy app.y, Model.py, best_model.pth, feature_scaler.pkl, target_scaler.pkl, stop_id_mapping.json
-COPY app.py .
+COPY backend.py .
 COPY Model.py .
 COPY best_model.pth .
 COPY feature_scaler.pkl .
@@ -21,4 +21,4 @@ COPY stop_id_mapping.json .
 EXPOSE 5240
 
 # Set the entrypoint
-CMD ["python", "app.py"]
+CMD ["python", "backend.py"]

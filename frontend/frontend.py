@@ -15,14 +15,19 @@ st.set_page_config(
 st.markdown('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">', unsafe_allow_html=True)
 
 # Constants
-API_BASE_URL = "https://ltc-bus-api.ethanpisani.com"
+import os
+API_BASE_URL = os.getenv("API_BASE_URL", "https://ltc-bus-api.ethanpisani.com")  # Use environment variable or default
+# API_BASE_URL = "https://ltc-bus-api.ethanpisani.com"
+# API_BASE_URL = "http://127.0.0.1:5240"  # Uncomment for local testing
 
 # Function to fetch available routes
 def fetch_routes():
     try:
         response = requests.get(f"{API_BASE_URL}/routes")
         if response.status_code == 200:
-            return response.json()
+            print("Routes fetched successfully")
+            print(response.json())
+            return response.json()["routes"]
         return ["01", "02", "03", "04", "06", "09", "10", "13", "15", "17", "19", "20", "24", "25", "27", "31", "33", "34"]  # Fallback routes
     except Exception as e:
         st.error(f"Error fetching routes: {str(e)}")
@@ -33,7 +38,9 @@ def fetch_stops(route_id):
     try:
         response = requests.get(f"{API_BASE_URL}/stops/{route_id}")
         if response.status_code == 200:
-            return response.json()
+            print(f"Stops for route {route_id} fetched successfully")
+            print(response.json())
+            return response.json()['stops']
         # Fallback stop IDs if API fails
         return {
             "01": ["SOUTWEL3", "DUNDWAT2", "RICHQUE1"],

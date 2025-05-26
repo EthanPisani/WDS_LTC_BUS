@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: ltc-bus-backend
+    ports:
+      - "5240:5240"
+    restart: always
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: ltc-bus-frontend
+    ports:
+      - "5241:5241"
+    restart: always
+    depends_on:
+      - backend

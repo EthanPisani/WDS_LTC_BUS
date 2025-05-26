@@ -19,9 +19,8 @@ requests==2.32.3
 scikit-learn==1.6.1
 scipy==1.15.2
 seaborn==0.13.2
-shap==0.44.1
+shap
 six==1.17.0
-streamlit==1.35.0
 sympy==1.13.3
 tensorboard==2.19.0
 tensorboard-data-server==0.7.2
