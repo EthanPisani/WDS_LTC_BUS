@@ -6,7 +6,7 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Install dependencies
-RUN pip install --no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cpu
+RUN pip install --no-cache-dir torch==2.2.2 --index-url https://download.pytorch.org/whl/cpu
 RUN pip install --no-cache-dir -r requirements.txt
 # Copy app.y, Model.py, best_model.pth, feature_scaler.pkl, target_scaler.pkl, stop_id_mapping.json
 COPY backend.py .
